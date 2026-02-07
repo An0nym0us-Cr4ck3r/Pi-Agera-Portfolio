@@ -1,0 +1,124 @@
+ERROR_429_{
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 15000, model: gemma-3-27b\nPlease retry in 40.499388472s.",
+    "status": "RESOURCE_EXHAUSTED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.Help",
+        "links": [
+          {
+            "description": "Learn more about Gemini API quotas",
+            "url": "https://ai.google.dev/gemini-api/docs/rate-limits"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+        "violations": [
+          {
+            "quotaMetric": "generativelanguage.googleapis.com/generate_content_free_tier_input_token_count",
+            "quotaId": "GenerateContentInputTokensPerModelPerMinute-FreeTier",
+            "quotaDimensions": {
+              "location": "global",
+              "model": "gemma-3-27b"
+            },
+            "quotaValue": "15000"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.RetryInfo",
+        "retryDelay": "40s"
+      }
+    ]
+  }
+}
+
+--- DISTILLED ---
+```
+{
+  "persona": "Helpful, informative, and capable of providing code examples. Responds directly to requests, even if multi-step. Can explain technical concepts.",
+  "interactions": [
+    {
+      "user": "いつ有料になりますか？ (When will it become paid?)",
+      "ai": "ChatGPTの有料化詳細は未公開。OpenAIウェブサイト参照。(Paid details are unpublished. Check OpenAI website.)"
+    },
+    {
+      "user": "androidを遠隔操作する方法は何ですか？ (How to remotely control Android?)",
+      "ai": [
+        "TeamViewer for Remote Control",
+        "VNC Viewer",
+        "Google Remote Desktop",
+        "Splashtop"
+      ]
+    },
+    {
+      "user": "URLのHTTPレスポンスを取得し、解析して表示するPHPコードを書いてください。(Write PHP code to get, parse, and display HTTP response from URL.)",
+      "ai": "```php\n$url = 'https://www.example.com';\n$response = file_get_contents($url);\n$data = json_decode($response, true);\necho '<pre>';\nprint_r($data);\necho '</pre>';\n```"
+    },
+    {
+      "user": "URLのHTTPレスポンスを取得し、HTMLとして解析するPHPコードを書いてください。(Write PHP code to get and parse HTTP response as HTML from URL.)",
+      "ai": "```php\n$url = 'https://www.example.com';\n$response = file_get_contents($url);\n$dom = new DOMDocument();\n@$dom->loadHTML($response);\n$xpath = new DOMXPath($dom);\n$elements = $xpath->query('//title');\nif ($elements->length > 0) {\n  $element = $elements->item(0);\n  echo $element->nodeValue;\n}\n```"
+    },
+    {
+      "user": "画像をせいせいすることはできますか？ (Can you generate images?)",
+      "ai": "ChatGPTは画像生成モデルではない。DALL-E等の別のAI技術が必要。(ChatGPT is not an image generation model. Requires other AI like DALL-E.)"
+    },
+    {
+      "user": "openaiはオープンではないのですか？ (Isn't OpenAI open source?)",
+      "ai": "OpenAIは非営利団体だが、モデル/サービスは一部限定公開。API利用は課金。(OpenAI is a non-profit, but models/services are partially restricted. API use is paid.)"
+    },
+    {
+      "user": "機械学習の方法の種類を教えてください (What are the types of machine learning?)",
+      "ai": [
+        "教師あり学習 (Supervised learning)",
+        "教師なし学習 (Unsupervised learning)",
+        "半教師あり学習 (Semi-supervised learning)",
+        "強化学習 (Reinforcement learning)",
+        "学習則 (Learning to rank)"
+      ]
+    },
+    {
+      "user": "openaiの",
+      "ai": "OpenAIは人工知能のリサーチと開発を行う企業です。(OpenAI is a company researching and developing AI.)"
+    },
+    {
+      "user": "open aiのプロダクトのすべてを教えて (Tell me all of OpenAI's products)",
+      "ai": [
+        "GPT (Generative Pre-trained Transformer)",
+        "DALL-E",
+        "OpenAI API",
+        "OpenAI Gym",
+        "OpenAI Safety"
+      ]
+    },
+    {
+      "user": "量子力学に関する方程式を一覧表示してください (List equations related to quantum mechanics)",
+      "ai": [
+        "Schrödinger方程式: iℏ∂ψ/∂t = Hψ",
+        "Heisenberg不確定性原理: ΔxΔp≥ℏ/2",
+        "Pauli方程式: H = -μ⋅B",
+        "Dirac方程式",
+        "Feynman path integral: K = ∫[dx]e^(iS/ℏ)"
+      ]
+    },
+    {
+      "user": "x86-64の機械語の例とその解説を教えてください (Give an example of x86-64 machine code and its explanation)",
+      "ai": [
+        "movq: レジスタ/メモリ間データ移動 (Data transfer between registers/memory)",
+        "addq: 2つのレジスタの加算 (Addition of two registers)",
+        "cmpq: 2つのレジスタの比較 (Comparison of two registers)",
+        "jmp: プログラムカウンタジャンプ (Program counter jump)"
+      ]
+    },
+    {
+      "user": "もっと詳しく (More details)",
+      "ai": [
+        "pushq: スタックにプッシュ (Push to stack)",
+        "popq: スタックからポップ (Pop from stack)"
+      ]
+    }
+  ]
+}
+```
