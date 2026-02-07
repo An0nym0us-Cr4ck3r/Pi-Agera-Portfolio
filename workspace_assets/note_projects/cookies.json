@@ -1,0 +1,39 @@
+[
+  {
+    "name": "fp",
+    "value": "f1f0fc226aa7e5fca59080464a418c496",
+    "domain": ".note.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": false,
+    "secure": false
+  },
+  {
+    "name": "_vid_v1",
+    "value": "09f5bfc87bd84ed320021f921ebdcd1f",
+    "domain": "note.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": false,
+    "secure": false,
+    "sameSite": "Lax"
+  },
+  {
+    "name": "_vid_v2",
+    "value": "09f5bfc87bd84ed320021f921ebdcd1f",
+    "domain": ".note.com",
+    "path": "/",
+    "expires": -1,
+    "httpOnly": false,
+    "secure": false
+  },
+  {
+    "name": "_note_session_v5",
+    "value": "6a7f3a23c5501212cb49349d4bf87499",
+    "domain": ".note.com",
+    "path": "/",
+    "expires": 1778038391.634635,
+    "httpOnly": true,
+    "secure": true
+  }
+]
